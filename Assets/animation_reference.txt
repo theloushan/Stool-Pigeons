@@ -1,0 +1,32 @@
+ANIMATION DETAILS
+================
+Idle [1x Speed, 24 samples, 1 frame per sprite]
+Walk [2x Speed, 24 samples, 6 frames per sprite]
+Jump [2x Speed, 24 samples, 6 frames per sprite]
+Poop [1x Speed, 24 samples, 5 frames per sprite]
+Fall [1x Speed, 24 samples, 1 frame per sprite]
+Death [1x Speed, 24 samples, 1 frame per sprite]
+
+VARIABLE DETAILS
+================
+bool onGround (false)
+bool Jumping (false)
+bool Pooping (false)
+bool Dying (false)
+float Speed (0.0)
+
+TRANSITION DETAILS
+=================
+AnyState -> Jump (Jumping = true, Pooping = false, Dying = false) [No exit time, Yes fixed duration, 0.1 transition duration, 0 offset, next state, can trans]
+AnyState -> Poop (Pooping = true, Dying = false) [same as above]
+AnyState -> Death (Dying = true) [same as above]
+Jump -> Fall (onGround = false) [0.75 exit time, Yes fixed duration, 0.25 transition duration, 0 offset, none]
+Jump -> Idle (onGround = true) [same as AnyState -> Jump]
+Poop -> Fall (onGround = false) [same as Jump -> Fall]
+Poop -> Idle (onGround = true) [same as AnyState -> Jump]
+Fall -> Idle (onGround = true) [0.1 exit time, Yes fixed duration, 0.25 transition duration, 0 offset, next state]
+Walk -> Idle (Speed > -0.01, Speed < 0.01) [same as AnyState -> Jump]
+Idle -> Walk (Speed > 0.01) [same as AnyState -> Jump]
+Idle -> Walk (Speed < -0.01) [same as AnyState -> Jump]
+Death -> Death [No exit time, No fixed duration, 0.1 transition duration, 0 offset, none]
+Fall -> Fall [same as Death -> Death]
