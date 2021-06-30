@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{8F1D07AF-F71B-103B-26CF-A730A1F0721B}") = "DuckSoup", "Assembly-CSharp.csproj", "{8DA770C1-C0BE-4DB4-D77F-0844E987E7E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DA770C1-C0BE-4DB4-D77F-0844E987E7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA770C1-C0BE-4DB4-D77F-0844E987E7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA770C1-C0BE-4DB4-D77F-0844E987E7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA770C1-C0BE-4DB4-D77F-0844E987E7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
