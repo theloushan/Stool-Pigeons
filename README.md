@@ -23,25 +23,44 @@ Flap your wings to get the height advantage on your opponent! Drop below platfor
 Mouse Move and Click - Select Menu Options
 
 Player 1
+
 A - Move Left
+
 D - Move Right
+
 W - Jump
+
 S - Drop
 
 Player 2
+
 Left Arrow - Move Left
+
 Right Arrow - Move Right
+
 Up Arrow - Jump
+
 Down Arrow - Drop
 
 Player 3
+
 F - Move Left
+
 H - Move Right
+
 T - Jump
+
 G - Drop
 
 Player 4
+
 J - Move Left
+
 L - Move Right
+
 I - Jump
+
 K - Drop
+
+# Installation Instructions
+Download the repo and run the StoolPigeons.exe file. Make sure that the StoolPigeons_Data folder is in the same location as the StoolPigeons.exe file!
